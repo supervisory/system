@@ -5,25 +5,23 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  backgroud-color: rgb(128, 138, 146);
 `
 
 export const Form = styled.form`
   width: 400px;
-  background: #fff;
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   img {
-    width: 100px;
+    width: 200px;
     margin: 10px 0 40px;
   }
   p {
     color: #ff3333;
-    margin-bottom: 15px;
     border: 1px solid #ff3333;
-    padding: 10px;
+    padding: 3px;
     width: 100%;
     text-align: center;
   }
@@ -31,11 +29,12 @@ export const Form = styled.form`
     flex: 1;
     height: 46px;
     margin-bottom: 15px;
-    padding: 0 20px;
     color: #777;
     font-size: 15px;
     width: 100%;
+    padding: 10px;
     border: 1px solid #ddd;
+    border-radius: 5px;
     &::placeholder {
       color: #999;
     }
@@ -43,14 +42,14 @@ export const Form = styled.form`
   button {
     color: #fff;
     font-size: 16px;
-    background: #fc6963;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
     height: 56px;
     border: 0;
     border-radius: 5px;
     width: 100%;
   }
   hr {
-    margin: 20px 0;
     border: none;
     border-bottom: 1px solid #cdcdcd;
     width: 100%;
