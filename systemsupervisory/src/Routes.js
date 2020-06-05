@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 import SignIn from './pages/SignIn'
-
-import { isAuthenticated } from './services/auth'
+import isAuthenticated from './services/auth'
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
+  
   <Route
     {...rest}
     render={props =>

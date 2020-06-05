@@ -12,21 +12,21 @@ class SignIn extends Component {
     error: ''
   }
 
-  handleSignIn = async e => {
+  handleSignIn = e => {
     e.preventDefault()
     const { email, password } = this.state;
     if (!email || !password) {
       this.setState({ error: 'Preencha todos os campos para continuar!' })
     } else {
       try {
-        const response = await api.post('/sessions', { email, password })
-        login(response.data.token);
+        // const response = await api.post('/sessions', { email, password })
+        // login(response.data.token);
         this.props.history.push('/app')
       } catch (err) {
         this.setState({
           error:
             'Usuário ou senha inválidos'
-        });
+        })
       }
     }
   }
